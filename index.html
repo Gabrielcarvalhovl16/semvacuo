@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Guia Anti-Vácuo | Descubra por que você fica sem assunto com ela</title>
+<meta name="description" content="Faça o teste rápido de 1 minuto e conheça o Guia Anti-Vácuo: ebook em PDF para iniciar conversas, manter o interesse e evitar o silêncio no WhatsApp e Instagram.">
+<meta name="theme-color" content="#050505">
+<meta property="og:title" content="Guia Anti-Vácuo: converse sem travar">
+<meta property="og:description" content="Descubra o que atrapalha suas conversas e conheça o guia prático em PDF.">
+<meta property="og:type" content="website">
+<script>
+/* ============ CONFIGURAÇÃO — edite apenas estes dois campos ============ */
+const CONFIG = {
+  URL_DO_CHECKOUT: "https://pay.kiwify.com.br/LpZzxyh",
+  ID_DO_PIXEL: "ID_DO_PIXEL"            // ex.: "123456789012345"
+};
+/* ======================================================================= */
+
+/* Meta Pixel: só carrega se o ID foi preenchido */
+const PIXEL_ON = CONFIG.ID_DO_PIXEL && CONFIG.ID_DO_PIXEL !== "ID_DO_PIXEL";
+if (PIXEL_ON) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', CONFIG.ID_DO_PIXEL);
+}
+const track = (ev, p) => { try { if (PIXEL_ON) fbq('track', ev, p); } catch (e) {} };
+const PRODUCT = { content_name: "Guia Anti-Vácuo", content_type: "product", value: 9.9, currency: "BRL" };
+track("PageView"); /* PageView ao carregar */
+/* Purchase NÃO é disparado aqui. Dispare-o apenas na página de obrigado do checkout
+   (track("Purchase", PRODUCT) após a confirmação real) ou via Conversions API/webhook do checkout. */
+</script>
+<style>
+:root{--bg:#050505;--g:#8CFF00;--w:#fff;--c:#171717;--m:#a8a8a8;--l:#262626}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--w);font:16px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;min-height:100dvh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(70% 38% at 50% 0,rgba(140,255,0,.14),transparent 70%);pointer-events:none}
+.wrap{position:relative;max-width:480px;margin:0 auto;padding:max(18px,env(safe-area-inset-top)) 20px 40px}
+.screen{display:none}.screen.on{display:block;animation:in .3s ease both}
+@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+h1,h2,h3{font-weight:900;line-height:1.06;letter-spacing:-.025em;text-transform:uppercase}
+h1{font-size:clamp(30px,9vw,40px)}h2{font-size:clamp(25px,7.4vw,32px)}h3{font-size:16px;letter-spacing:-.01em}
+h1:focus,h2:focus{outline:0}
+.g{color:var(--g)}.m{color:var(--m)}.c{text-align:center}
+p{margin-top:12px}
+.btn{display:block;width:100%;border:0;border-radius:18px;background:var(--g);color:#050505;font-family:inherit;font-weight:900;font-size:17px;line-height:1.2;padding:20px 16px;margin-top:22px;cursor:pointer;text-transform:uppercase;letter-spacing:.01em;box-shadow:0 10px 30px rgba(140,255,0,.25);animation:pulse 2.4s infinite;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(140,255,0,.45),0 10px 30px rgba(140,255,0,.25)}70%,100%{box-shadow:0 0 0 16px rgba(140,255,0,0),0 10px 30px rgba(140,255,0,.25)}}
+:focus-visible{outline:3px solid var(--w);outline-offset:3px}
+
+/* Celular com chat */
+.phone{width:min(250px,72vw);margin:26px auto 4px;background:#0d0d0d;border:3px solid #2c2c2c;border-radius:34px;padding:12px 10px 16px;box-shadow:0 0 60px rgba(140,255,0,.18);transform:rotate(-3deg)}
+.phone .bar{display:flex;align-items:center;gap:8px;padding:2px 6px 10px;border-bottom:1px solid var(--l);font-size:13px;font-weight:700}
+.phone .av{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#444,#222)}
+.chat{display:flex;flex-direction:column;gap:7px;padding-top:12px;min-height:200px}
+.b{max-width:80%;padding:8px 12px;border-radius:14px;font-size:13px;line-height:1.3;opacity:0;animation:pop .4s forwards}
+.b.me{align-self:flex-end;background:var(--g);color:#050505;border-bottom-right-radius:4px}
+.b.her{align-self:flex-start;background:var(--l);border-bottom-left-radius:4px}
+.seen{align-self:flex-end;font-size:10px;color:var(--m);opacity:0;animation:pop .4s forwards}
+.chat>*:nth-child(1){animation-delay:.3s}.chat>*:nth-child(2){animation-delay:1s}.chat>*:nth-child(3){animation-delay:1.7s}.chat>*:nth-child(4){animation-delay:2.4s}.chat>*:nth-child(5){animation-delay:3.2s}
+.dots{align-self:flex-start;background:var(--l);padding:10px 14px;border-radius:14px;display:flex;gap:4px;opacity:0;animation:pop .4s 4s forwards}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--m);animation:bl 1s infinite}.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.95)}to{opacity:1;transform:none}}
+@keyframes bl{50%{opacity:.25}}
+
+/* Quiz */
+.top{display:flex;align-items:center;gap:12px;margin-bottom:26px}
+.back{flex:none;width:44px;height:44px;border-radius:14px;border:1px solid var(--l);background:var(--c);color:var(--w);font-size:20px;cursor:pointer}
+.back[hidden]{display:block;visibility:hidden}
+.prog{flex:1}.track{height:8px;border-radius:8px;background:var(--l);overflow:hidden}
+.fill{height:100%;width:0;background:var(--g);border-radius:8px;box-shadow:0 0 12px var(--g);transition:width .4s ease}
+.count{font-size:12px;color:var(--m);margin-top:6px}
+.opts{display:grid;gap:12px;margin-top:24px}
+.opt{display:flex;align-items:center;gap:14px;width:100%;text-align:left;font-family:inherit;font-size:17px;font-weight:600;line-height:1.3;color:var(--w);background:var(--c);border:2px solid var(--l);border-radius:18px;padding:18px 16px;min-height:68px;cursor:pointer;transition:border-color .15s,background .15s,transform .15s}
+.opt:active{transform:scale(.98)}
+.opt .k{flex:none;width:30px;height:30px;border-radius:10px;background:var(--l);display:grid;place-items:center;font-size:14px;font-weight:900;color:var(--g)}
+.opt.sel{border-color:var(--g);background:rgba(140,255,0,.1)}
+.opt.sel .k{background:var(--g);color:#050505}
+
+/* Processamento */
+.ring{width:84px;height:84px;margin:40px auto 28px;border-radius:50%;border:6px solid var(--l);border-top-color:var(--g);animation:spin .9s linear infinite;box-shadow:0 0 30px rgba(140,255,0,.25)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.steps{margin-top:24px;display:grid;gap:10px;min-height:96px}
+.steps p{margin:0;color:var(--m);animation:in .4s both}.steps p:before{content:"✓ ";color:var(--g);font-weight:900}
+
+/* Resultado e oferta */
+.tag{display:inline-block;background:rgba(140,255,0,.12);border:1px solid var(--g);color:var(--g);border-radius:99px;padding:6px 14px;font-size:13px;font-weight:700;margin-bottom:16px}
+.card{background:var(--c);border:1px solid var(--l);border-radius:22px;padding:22px;margin-top:22px}
+.sec{margin-top:54px}
+.book{width:190px;height:262px;margin:34px auto 12px;perspective:900px}
+.cover{position:relative;width:100%;height:100%;transform:rotateY(-24deg) rotateX(4deg);transform-style:preserve-3d;border-radius:4px 12px 12px 4px;background:linear-gradient(155deg,#151515,#050505 60%);border:2px solid var(--g);padding:26px 18px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:-14px 18px 40px rgba(140,255,0,.22),0 0 0 1px #000}
+.cover:before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;background:var(--g);border-radius:2px 0 0 2px;opacity:.9}
+.cover b{display:block;font-size:30px;line-height:.95;font-weight:900;letter-spacing:-.03em;padding-left:10px}
+.cover b span{color:var(--g);display:block;font-size:26px}
+.cover small{padding-left:10px;font-size:11px;color:#d0d0d0;line-height:1.3}
+.ben{display:grid;gap:12px;margin-top:22px}
+.ben .card{margin:0;display:flex;gap:14px;align-items:flex-start}
+.ben .ic{flex:none;width:38px;height:38px;border-radius:12px;background:var(--g);color:#050505;display:grid;place-items:center;font-weight:900}
+.ben p{margin-top:4px;color:var(--m);font-size:15px}
+.ex{margin-top:16px}.ex .chat{min-height:0;margin-top:12px}.ex .b{opacity:1;animation:none;max-width:88%}.ex .b.no{background:#2a1414;color:#ffb4b4}
+.ex .b.me.ok{background:var(--g)}
+.note{font-size:13px;color:var(--m);margin-top:16px}
+.price{text-align:center;margin:18px 0 4px}.price strong{display:block;font-size:56px;line-height:1;font-weight:900;color:var(--g);letter-spacing:-.03em}
+.price span{font-size:14px;color:var(--m)}
+.list{list-style:none;padding:0;display:grid;gap:10px;margin-top:16px}
+.list li{padding-left:28px;position:relative}.list li:before{content:"✓";position:absolute;left:0;color:var(--g);font-weight:900}
+details{background:var(--c);border:1px solid var(--l);border-radius:16px;margin-top:10px}
+summary{cursor:pointer;font-weight:700;padding:16px 18px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--g);font-size:22px;line-height:1}
+details[open] summary:after{content:"–"}details p{padding:0 18px 18px;margin:0;color:var(--m)}
+footer{margin-top:56px;padding-top:26px;border-top:1px solid var(--l);font-size:13px;color:var(--m);text-align:center}
+footer a{color:var(--w);margin:0 8px}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:9;padding:10px 16px max(12px,env(safe-area-inset-bottom));background:linear-gradient(transparent,#050505 40%);transform:translateY(120%);transition:transform .3s}
+.sticky.on{transform:none}.sticky .btn{margin:0;max-width:448px;margin-inline:auto;padding:17px 16px;animation:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.b,.seen,.dots{opacity:1}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<!-- TELA INICIAL -->
+<section class="screen on" id="s-start" aria-labelledby="t-start">
+  <h1 id="t-start" tabindex="-1" class="c">Descubra por que você fica <span class="g">sem assunto</span> com ela</h1>
+  <p class="c m">Responda algumas perguntas rápidas e descubra quais pontos podem estar atrapalhando suas conversas.</p>
+  <div class="phone" aria-hidden="true">
+    <div class="bar"><div class="av"></div>Ela</div>
+    <div class="chat">
+      <div class="b me">oi, tudo bem?</div>
+      <div class="b her">oi! tudo e vc?</div>
+      <div class="b me">tudo certo kkkk</div>
+      <div class="seen">Visualizado</div>
+      <div class="dots"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+  <p class="c m" style="font-size:14px">Leva aproximadamente 1 minuto.</p>
+  <button class="btn" id="go">Começar meu teste →</button>
+</section>
+
+<!-- QUIZ -->
+<section class="screen" id="s-quiz" aria-labelledby="t-q">
+  <div class="top">
+    <button class="back" id="back" aria-label="Voltar para a pergunta anterior">←</button>
+    <div class="prog">
+      <div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" id="bar"><div class="fill" id="fill"></div></div>
+      <div class="count" id="count" aria-live="polite"></div>
+    </div>
+  </div>
+  <h2 id="t-q" tabindex="-1"></h2>
+  <div class="opts" id="opts"></div>
+</section>
+
+<!-- PROCESSAMENTO -->
+<section class="screen c" id="s-proc" aria-live="polite">
+  <div class="ring" aria-hidden="true"></div>
+  <h2 tabindex="-1" id="t-proc">Analisando suas respostas...</h2>
+  <div class="steps" id="steps"></div>
+</section>
+
+<!-- RESULTADO -->
+<section class="screen" id="s-res" aria-labelledby="t-res">
+  <span class="tag">Seu perfil de conversa</span>
+  <h1 id="t-res" tabindex="-1"></h1>
+  <p id="res-txt" style="font-size:18px"></p>
+  <p class="note">Este resultado é apenas uma indicação baseada nas suas respostas. Não é um diagnóstico.</p>
+  <div class="card">
+    <h2 style="font-size:23px">Boa notícia: você pode <span class="g">desenvolver</span> essas habilidades!</h2>
+    <p class="m">Conversar melhor é uma habilidade que pode ser praticada. Com orientações, exemplos e um pouco de prática, você pode aprender a iniciar assuntos, desenvolver conversas e responder com mais naturalidade.</p>
+  </div>
+  <button class="btn" id="to-offer">Quero descobrir como →</button>
+</section>
+
+<!-- OFERTA -->
+<section class="screen" id="s-offer" aria-labelledby="t-offer">
+  <h1 id="t-offer" tabindex="-1" class="c">Conheça o <span class="g">Guia Anti-Vácuo</span></h1>
+  <p class="c m">Um guia prático para ajudar você a conversar com mais naturalidade e não ficar sem assunto.</p>
+  <div class="book" role="img" aria-label="Capa do ebook Guia Anti-Vácuo">
+    <div class="cover"><b>GUIA<span>ANTI-VÁCUO</span></b><small>Aprenda a conversar com a menina que você gosta sem travar.</small></div>
+  </div>
+
+  <div class="ben">
+    <div class="card"><div class="ic">1</div><div><h3>Aprenda a iniciar conversas</h3><p>Tenha ideias para começar um assunto de maneira natural.</p></div></div>
+    <div class="card"><div class="ic">2</div><div><h3>Mantenha o interesse</h3><p>Aprenda maneiras de desenvolver conversas sem depender apenas de respostas curtas.</p></div></div>
+    <div class="card"><div class="ic">3</div><div><h3>Evite o silêncio</h3><p>Conheça estratégias e exemplos para lidar com momentos em que falta assunto.</p></div></div>
+  </div>
+
+  <div class="sec">
+    <h2>Veja o tipo de exemplo que você vai encontrar</h2>
+    <div class="card ex">
+      <p class="m" style="margin:0">Em vez de simplesmente perguntar "Tudo bem?", experimente fazer uma pergunta relacionada a algo que vocês conversaram antes.</p>
+      <div class="chat"><div class="b me no">Tudo bem?</div><div class="b me ok">Como foi aquela prova que você comentou?</div></div>
+    </div>
+    <div class="card ex">
+      <p class="m" style="margin:0">Em vez de responder apenas "kkkk", acrescente um comentário ou uma pergunta que permita continuar a conversa.</p>
+      <div class="chat"><div class="b me no">kkkk</div><div class="b me ok">kkkk essa foi boa! E aí, o que você fez depois?</div></div>
+    </div>
+    <p class="note">Exemplos ilustrativos e educativos. Não são mensagens mágicas e não garantem resposta ou interesse.</p>
+  </div>
+
+  <div class="sec" id="oferta">
+    <h2 class="c">Comece a conversar melhor <span class="g">hoje!</span></h2>
+    <div class="card" id="offer-card" style="border-color:var(--g)">
+      <ul class="list">
+        <li>Ebook digital GUIA ANTI-VÁCUO</li>
+        <li>Acesso ao material em PDF após a confirmação do pagamento</li>
+        <li>Orientações práticas</li>
+        <li>Exemplos de conversas</li>
+        <li>Conteúdo para consultar quando precisar</li>
+      </ul>
+      <div class="price"><span>Pagamento único de</span><strong>R$ 9,90</strong></div>
+      <button class="btn buy">Quero meu Guia Anti-Vácuo →</button>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2>Dúvidas frequentes</h2>
+    <details><summary>Como vou receber o ebook?</summary><p>Após a confirmação do pagamento, você receberá as instruções de acesso ao material digital.</p></details>
+    <details><summary>O material é físico?</summary><p>Não. É um produto digital em PDF.</p></details>
+    <details><summary>Preciso ter experiência para utilizar?</summary><p>Não. O material foi pensado para quem deseja desenvolver suas habilidades de comunicação.</p></details>
+    <details><summary>O guia garante que uma menina vai gostar de mim?</summary><p>Não. O objetivo é ajudar você a melhorar suas habilidades de conversa. Interesse e reciprocidade dependem das duas pessoas.</p></details>
+  </div>
+
+  <footer>
+    <strong style="color:var(--w)">GUIA ANTI-VÁCUO</strong>
+    <p>Suporte: <!-- TROQUE PELO SEU CONTATO REAL --><a href="mailto:suporte@seudominio.com">suporte@seudominio.com</a></p>
+    <p><a href="politica-de-privacidade.html">Política de privacidade</a><a href="termos-de-uso.html">Termos de uso</a></p>
+    <p>Produto digital em PDF. Não há envio de item físico. Os resultados dependem de cada pessoa e não há garantia de interesse ou resposta de terceiros.</p>
+  </footer>
+  <div style="height:90px"></div>
+</section>
+
+</main>
+<div class="sticky" id="sticky"><button class="btn buy">Quero meu Guia · R$ 9,90 →</button></div>
+
+<script>
+/* perfis: 0 pensa demais · 1 fica sem assunto · 2 não sabe começar · 3 precisa de confiança */
+const Q = [
+  ["Quando você vai conversar com uma menina que gosta, o que acontece?",
+    [["Fico nervoso e não sei o que falar.",3],["Começo bem, mas depois fico sem assunto.",1],["Penso demais antes de responder.",0],["Tenho dificuldade para iniciar a conversa.",2]]],
+  ["Quando ela responde sua mensagem, você costuma...",
+    [["Demorar muito pensando em uma resposta.",0],["Responder apenas o básico.",1],["Não saber como continuar o assunto.",1],["Ficar tranquilo, mas às vezes faltar criatividade.",2]]],
+  ["Qual dessas situações mais incomoda você?",
+    [["A conversa morrer rapidamente.",1],["Receber respostas curtas.",3],["Não conseguir demonstrar personalidade.",3],["Não saber como puxar novos assuntos.",2]]],
+  ["Como você se sente quando a conversa começa a ficar parada?",
+    [["Fico ansioso e começo a pensar demais.",0],["Tenho medo de parecer desinteressante.",3],["Não sei como mudar de assunto.",2],["Simplesmente deixo a conversa morrer.",1]]],
+  ["O que você gostaria de melhorar?",
+    [["Aprender a iniciar conversas.",2],["Saber manter o interesse.",1],["Ter mais criatividade nas respostas.",0],["Conversar com mais confiança.",3]]],
+  ["Você gostaria de ter exemplos e orientações para não ficar sem saber o que responder?",
+    [["Sim, preciso muito disso!",null],["Sim, quero melhorar minhas conversas.",null],["Com certeza, quero aprender.",null]]]
+];
+const PROFILES = [
+  ["O que pensa demais","Você provavelmente pensa tanto antes de responder que acaba perdendo a naturalidade da conversa."],
+  ["O que fica sem assunto","Você consegue iniciar uma conversa, mas sente dificuldade para manter o assunto fluindo."],
+  ["O que não sabe como começar","Seu maior desafio parece ser dar o primeiro passo e encontrar uma maneira natural de iniciar uma conversa."],
+  ["O que precisa de mais confiança","Você quer conversar melhor, mas às vezes acaba se preocupando demais com o que a outra pessoa vai pensar."]
+];
+const $ = id => document.getElementById(id);
+const answers = []; /* índice escolhido por pergunta (guardado só em memória) */
+let cur = 0;
+
+function show(id, focusId) {
+  document.querySelectorAll(".screen").forEach(s => s.classList.toggle("on", s.id === id));
+  window.scrollTo(0, 0);
+  const f = $(focusId); if (f) f.focus({preventScroll:true});
+}
+function renderQ() {
+  const [q, opts] = Q[cur], n = Q.length;
+  $("t-q").textContent = q;
+  $("fill").style.width = (cur / n * 100) + "%";
+  $("bar").setAttribute("aria-valuenow", cur);
+  const left = n - cur - 1;
+  $("count").textContent = "Pergunta " + (cur + 1) + " de " + n + " · " + (left ? "faltam " + left : "última pergunta");
+  $("back").hidden = cur === 0;
+  const box = $("opts"); box.innerHTML = "";
+  opts.forEach(([txt], i) => {
+    const b = document.createElement("button");
+    b.className = "opt" + (answers[cur] === i ? " sel" : "");
+    b.innerHTML = '<span class="k">' + "ABCD"[i] + "</span><span></span>";
+    b.lastChild.textContent = txt;
+    b.onclick = () => pick(i, b);
+    box.appendChild(b);
+  });
+  show("s-quiz", "t-q");
+}
+function pick(i, btn) {
+  answers[cur] = i;
+  document.querySelectorAll(".opt").forEach(o => o.classList.remove("sel"));
+  btn.classList.add("sel");
+  if (navigator.vibrate) navigator.vibrate(10);
+  setTimeout(() => {
+    if (cur < Q.length - 1) { cur++; renderQ(); } else { $("fill").style.width = "100%"; process(); }
+  }, 320);
+}
+function process() {
+  show("s-proc", "t-proc");
+  const msgs = ["Identificando suas principais dificuldades...","Avaliando seus hábitos de comunicação...","Preparando seu resultado..."];
+  const box = $("steps"); box.innerHTML = "";
+  msgs.forEach((m, i) => setTimeout(() => { const p = document.createElement("p"); p.textContent = m; box.appendChild(p); }, i * 800));
+  setTimeout(showResult, 2700);
+}
+function profile() {
+  const count = [0,0,0,0], first = [99,99,99,99];
+  answers.forEach((a, qi) => {
+    const p = Q[qi][1][a][1];
+    if (p === null) return;
+    count[p]++; if (first[p] === 99) first[p] = qi;
+  });
+  return [0,1,2,3].sort((a, b) => count[b] - count[a] || first[a] - first[b])[0];
+}
+function showResult() {
+  const [name, txt] = PROFILES[profile()];
+  $("t-res").textContent = name;
+  $("res-txt").textContent = txt;
+  show("s-res", "t-res");
+}
+function checkoutUrl() {
+  try {
+    const u = new URL(CONFIG.URL_DO_CHECKOUT);
+    new URLSearchParams(location.search).forEach((v, k) => u.searchParams.set(k, v)); /* repassa UTMs */
+    return u.href;
+  } catch (e) { return null; }
+}
+let offerSeen = false;
+function showOffer() {
+  show("s-offer", "t-offer");
+  if (!offerSeen) { offerSeen = true; track("ViewContent", PRODUCT); }
+  const card = $("offer-card"), st = $("sticky");
+  new IntersectionObserver(([e]) => st.classList.toggle("on", !e.isIntersecting && e.boundingClientRect.top > 0 || (!e.isIntersecting && e.boundingClientRect.top < 0 && false)), {threshold:0}).observe(card);
+  setTimeout(() => st.classList.add("on"), 600);
+}
+function buy() {
+  track("InitiateCheckout", PRODUCT);
+  const url = checkoutUrl();
+  if (!url) { console.warn("Defina CONFIG.URL_DO_CHECKOUT com a URL real do checkout."); return; }
+  setTimeout(() => { location.href = url; }, 250); /* dá tempo de o evento ser enviado */
+}
+
+$("go").onclick = () => { cur = 0; answers.length = 0; renderQ(); };
+$("back").onclick = () => { if (cur > 0) { cur--; renderQ(); } };
+$("to-offer").onclick = showOffer;
+document.querySelectorAll(".buy").forEach(b => b.onclick = buy);
+</script>
+</body>
+</html>
